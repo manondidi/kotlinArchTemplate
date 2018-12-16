@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<template
+    format="5"
+    revision="5"
+    name="BasePagingActivity"
+    minApi="15"
+    minBuildApi="15">
+
+    <category value="mndd" />
+    <formfactor value="Mobile" />
+
+    <parameter
+    	id="activityClass"
+    	name="class class"
+        type="string"
+    	constraints="class|unique|nonempty"
+    	suggest="" 
+        default="XXXActivity"  />
+
+    <parameter
+        id="presenterClass"
+        name="presenter class"
+        type="string"
+        constraints="class|unique|nonempty"
+        suggest="" 
+        default="XXXPresenter"  />
+
+    <parameter
+        id="contractClass"
+        name="contract class"
+        type="string"
+        constraints="class|unique|nonempty"
+        suggest="" 
+        default="XXXContract"  />
+
+ 
+
+    <parameter
+        id="layoutName"
+        name="Layout Name"
+        type="string"
+        constraints="layout|unique|nonempty"
+        suggest=""
+        default="activity_xxx"  />
+
+    <parameter
+        id="isLauncher"
+        name="Launcher Activity"
+        type="boolean"
+        default="false"/>
+
+    <parameter
+        id="packageName"
+        name="Package name"
+        type="string"
+        constraints="package"
+        default="com.mycompany.myapp" />
+
+
+
+    <globals file="globals.xml.ftl" />
+    <execute file="recipe.xml.ftl" />
+
+</template>

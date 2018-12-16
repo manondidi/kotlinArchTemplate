@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<template
+    format="5"
+    revision="5"
+    name="Itembinder"
+    minApi="15"
+    minBuildApi="15">
+
+    <category value="mndd" />
+    <formfactor value="Mobile" />
+
+    <parameter
+    	id="binderClass"
+    	name="binderName"
+        type="string"
+    	constraints="class|unique|nonempty"
+    	suggest="" 
+        default="XXXItembinder"  />
+
+    <parameter
+        id="itemClass"
+        name="ItemClass"
+        type="string"
+        constraints="class|unique|nonempty"
+        suggest="" 
+        default="XXXModel"  />
+
+    <parameter
+        id="layoutName"
+        name="Layout Name"
+        type="string"
+        constraints="layout|unique|nonempty"
+        suggest=""
+        default="recyclerview_item_xxx" />
+
+    <parameter
+        id="packageName"
+        name="Package name"
+        type="string"
+        constraints="package"
+        default="com.mycompany.myapp" />
+
+
+
+    <globals file="globals.xml.ftl" />
+    <execute file="recipe.xml.ftl" />
+
+</template>
