@@ -1,21 +1,7 @@
-# kotlinArch
-kotlin开发脚手架
+本模板是 [kotlinArch](https://github.com/manondidi/kotlinArch "kotlinArch")的开发模板
+
+把 文件丢在  androidstudio install dirction/Contents/plugins/android/lib/templates/activities/ 目录下
 
 
 
-
-
-##Todo
-- [ ] rxkotlin
-
-- [ ] mvp
-
-- [ ] databinding或viewmodel
-
-- [ ] 策略模式的自动分页
-
-- [ ] 各种cover封装
-
-- [ ] mock管理
-
-  ......
+![图片](https://raw.githubusercontent.com/manondidi/kotlinArchTemplate/master/sc1.jpg)
