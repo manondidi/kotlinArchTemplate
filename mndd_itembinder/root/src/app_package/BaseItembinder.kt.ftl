@@ -4,7 +4,7 @@ package ${packageName}
 
 class ${binderClass} : ItemViewBinder<${itemClass}, ${binderClass}.ViewHolder>() {
 
-	lateinit var itemData:itemClass
+	lateinit var itemData:${itemClass}
 
     override fun onCreateViewHolder(inflater: LayoutInflater, parent: ViewGroup): ${binderClass}.ViewHolder =
         ViewHolder(inflater.inflate(R.layout.${layoutName}, parent, false))
